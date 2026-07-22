@@ -28,12 +28,12 @@ class BaseBacktester:
                  leverage: float = 3.0,
                  taker_fee: float = 0.0005,
                  daily_funding_rate: float = 0.0001,
-                 atr_multiplier: float = 5.0,
-                 tp_multiplier: float = 4.0,
-                 risk_per_trade: float = 0.10,
-                 regime_sma_period: int = 100,
+                 atr_multiplier: float = 3.0,
+                 tp_multiplier: float = 2.0,
+                 risk_per_trade: float = 0.07,
+                 regime_sma_period: int = 70,
                  regime_filter_enabled: bool = True,
-                 counter_trend_size_mult: float = 0.4):
+                 counter_trend_size_mult: float = 0.0):
         
         self.initial_capital = initial_capital
         self.leverage = leverage
